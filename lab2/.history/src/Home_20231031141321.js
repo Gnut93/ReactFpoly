@@ -1,0 +1,2 @@
+import { listsp } from "./data";
+

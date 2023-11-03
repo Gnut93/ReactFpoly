@@ -1,0 +1,13 @@
+#chitiet {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.gia {
+  font-weight: bold;
+  color: #ff5733; /* Màu văn bản màu cam */
+}
+
+/* Thêm quy tắc CSS tùy chỉnh khác tại đây */

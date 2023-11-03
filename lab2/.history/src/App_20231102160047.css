@@ -1,0 +1,206 @@
+/* Thiết lập font chữ và hộp mô hình cho toàn bộ trang */
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+
+body {
+  font-family: "Gotu", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+.container {
+  box-sizing: border-box;
+}
+/* Loại bỏ gạch chân ở liên kết */
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* Định dạng header */
+.container > header {
+  max-width: 100%;
+}
+.banner img {
+  height: 80px;
+}
+
+/* Định dạng thanh điều hướng */
+.container > nav {
+  background: linear-gradient(to right, #633fce, #2e70d2);
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Định dạng phần chính của trang */
+.container > main {
+  min-height: 400px;
+}
+
+/* Định dạng bài viết */
+.container > main > article {
+  background: #fff;
+}
+
+/* Định dạng cột bên */
+/* Định dạng phần aside */
+.container > main > aside {
+  background: rgba(179, 221, 234, 0.895);
+  padding: 20px; /* Thêm khoảng cách giữa nội dung và biên */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Thêm shadow */
+  box-sizing: border-box;
+}
+
+/* Định dạng tiêu đề trong phần aside */
+.container > main > aside h3 {
+  color: blue;
+  font-size: 22px;
+}
+
+/* Định dạng danh sách trong phần aside */
+.container > main > aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Định dạng mục danh sách trong phần aside */
+.container > main > aside li {
+  margin-bottom: 10px;
+}
+
+/* Định dạng liên kết trong phần aside */
+.container > main > aside a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Định dạng liên kết khi rê chuột qua */
+.container > main > aside a:hover {
+  text-decoration: underline;
+  color: #0d6efd;
+}
+
+/* Định dạng footer */
+.container > footer {
+  color: rgb(9, 24, 37);
+}
+
+/* Định dạng văn bản trong footer */
+.container > footer > p {
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Định dạng danh sách menu */
+.container > nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Định dạng các mục trong danh sách menu */
+.container > nav ul > li {
+  display: inline-block;
+  min-width: 50px;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Định dạng liên kết trong danh sách menu */
+.container > nav ul > li > a {
+  color: white;
+  transition: 0.2s ease;
+}
+
+/* Định dạng liên kết khi rê chuột qua */
+.container > nav ul > li > a:hover {
+  color: rgb(204, 208, 211);
+}
+
+/* Định dạng lớp home */
+.home {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Chia cột thành các cột có chiều rộng tối thiểu 300px */
+  grid-gap: 20px; /* Khoảng cách giữa các cột */
+}
+
+/* Định dạng sản phẩm */
+.home > .sp {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổi màu shadow và điều chỉnh opacity */
+  padding: 5px;
+  text-align: center;
+}
+
+/* Định dạng tiêu đề sản phẩm */
+.home > .sp > h4 {
+  height: 20px;
+  font-size: 18px;
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.home > .sp > img {
+  max-width: 100%;
+  height: 150px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.home > .sp > img:hover {
+  transform: scale(1.1);
+}
+
+/* Định dạng màu chữ cho lớp gia */
+.gia {
+  margin: 30px 0px 0px;
+  color: rgb(20, 53, 195);
+}
+.gia-km {
+  color: #c93fce;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Định dạng tiêu đề */
+.title {
+  text-align: center;
+  color: rgb(11, 11, 17);
+  margin: 30px;
+}
+
+/* Định dạng nút */
+.btn {
+  background: linear-gradient(to right, #633fce, #2e70d2);
+  color: aliceblue !important;
+  transition: 0.2s ease;
+  margin-bottom: 10px;
+  margin: 0 8px 10px;
+}
+
+/* Định dạng nút khi rê chuột qua */
+.btn:hover {
+  opacity: 0.9;
+  color: antiquewhite;
+}
+.line {
+  height: 3px;
+  background: linear-gradient(to right, #7257c5, #3a7de2);
+  margin: 30px 0px;
+}
+.ten {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.list {
+  padding: 0px 15px;
+}
+#spxn > .sp > li > a {
+  font-size: 14px;
+}
